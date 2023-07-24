@@ -1,0 +1,104 @@
+#contact { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;
+
+    h2{
+        margin-bottom: 3%;
+    }
+    p{
+        margin-bottom: 2%;
+    }
+    form { 
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #nameEmail { 
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            input {
+                width: 50%;
+                margin-bottom: 2%; 
+                
+            }
+            #email{
+                margin-left: 2%;
+                width: 50%;
+            }
+        }
+        #selectCel { 
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            select { 
+                margin-bottom: 2%;
+                width: 50%;
+            }
+            input {
+                margin-bottom: 2%; 
+                margin-left: 2%;
+                width: 50%;
+            }
+        }
+        textarea { 
+            margin-bottom: 2%;
+        }
+        button{
+            width: 40%;
+        }
+    }
+
+}
+
+
+@media(max-width:415px){
+    #contact { 
+
+        h2{
+            font-size: 1.3em;
+
+        }
+        p{
+            font-size: 0.8em;
+
+        }
+        form {
+            width: 80%;
+            #nameEmail{
+                flex-direction: column;
+                input { 
+                    width: 100%;
+
+                }
+                #email{ 
+                    width: 100%;
+                    margin-left: 0;
+
+                }
+
+            }
+            #selectCel {
+                flex-direction: column;
+                
+                select{
+                    width: 100%;
+
+                }
+                input {
+                    width: 100%;
+                    margin-left: 0;
+                }
+
+            }
+
+        }
+
+    }
+
+
+}

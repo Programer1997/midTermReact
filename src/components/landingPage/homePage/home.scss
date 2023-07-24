@@ -1,0 +1,103 @@
+.homePage {
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+    
+    img {
+        width: 100%;
+        height: auto;
+        //background-color: rgba(0,0,0,0.4);
+        opacity: 0.7;
+    }
+    .textHome { 
+        color: black;
+        z-index: 5;
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+        width: 40%;
+        h1 {
+            font-size: 4em;
+        }
+        
+
+    }
+    .register { 
+        width: 100%;
+        position: absolute;
+        top: 60%;
+        left: 60%;
+        transform: translate(10%,60%);
+        
+        button {
+            width: 20%;
+            font-size: 1.5em;
+        }
+
+    }
+
+
+}
+
+
+/* CSS */
+@media (max-width: 415px) {
+    /* Styles for screens with a width of 768px or less */
+    .homePage {
+        //width:100%;
+        
+        img{
+
+        }
+        .textHome{
+            width: 40%;
+            top: 70%;
+            left: 30%;
+            transform: translate(-50%,-50%);
+            h1{
+                font-size: 1em;
+            }
+
+        }
+        .register{
+            transform: translate(10%,100%);
+            button{
+                font-size: 60%;
+
+            }
+
+        }
+    }
+
+  }
+  
+  @media (min-width: 415px) and (max-width: 912px) {
+    .homePage {
+        //width:100%;
+        
+        img{
+
+        }
+        .textHome{
+            width: 40%;
+            top: 55%;
+            left: 30%;
+            transform: translate(-50%,-50%);
+            h1{
+                font-size: 2em;
+            }
+
+        }
+        .register{
+            transform: translate(10%,100%);
+            button{
+                font-size: 100%;
+
+            }
+
+        }
+    }
+  }
+  

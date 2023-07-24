@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    #root { 
+        width: 100%;
+        .container { 
+            width: 100%;
+            margin: 0;
+            margin-right: 0%;
+            max-width: 100%;
+            padding: 0;
+
+            .reputationSite { 
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 4%;
+                h1 {
+                    margin-top: 2%;
+                    margin-bottom: 2%;
+
+                }
+                .cardsRep { 
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+
+                }
+
+            }
+            .ourWorkSite { 
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #F6F8F7;
+                padding: 60px;
+                
+                h1{
+                    margin-top: 3%;
+                }
+                
+                
+            }
+            
+            
+        }
+        
+    }
+}
+
+
+/* CSS */
+@media (max-width: 415px) {
+    /* Styles for screens with a width of 415px or less */
+    body #root .container .reputationSite {
+        h1{
+            font-size: 1.2em;
+        }
+        .cardsRep { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+    
+   
+  }
+  
+  /*@media (min-width: 769px) and (max-width: 1024px) {
+    Styles for screens with a width between 769px and 1024px 
+  }*/
+  

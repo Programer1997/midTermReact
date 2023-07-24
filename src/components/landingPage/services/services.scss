@@ -1,0 +1,107 @@
+.services { 
+    width: 100%;
+    position: relative;
+
+    img { 
+        width: 100%;
+        height: 300px;
+        filter: brightness(0.3);
+    }
+    .serviceText { 
+        width: 70%;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate(-10%,0%);
+        color: white;
+        h1 { 
+            font-size: 2em;
+
+        }
+        h2 {
+            font-size: 1.5em;
+
+        }
+        h4 {
+            font-size: 1.1em;
+
+        }
+        p{
+            font-size: 0.9em;
+
+        }
+    }
+    .consultingDiv{ 
+        width: 20%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(100%,-50%);
+        text-align: center;
+        button { 
+            padding: 10px;
+            border-radius: 10px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            width: 100%;
+
+        }
+        p{
+            color:white;
+            text-transform: capitalize;
+            margin-top: 2%;
+
+        }
+        button:hover { 
+            background-color: rgb(192, 132, 20);
+        }
+
+    }
+
+}
+
+
+@media(max-width:415px){
+    .services{
+        img{
+
+        }
+        .serviceText{
+            h1{
+                font-size: 1em;
+            }
+            p{
+                font-size: 0.8em;
+
+            }
+            h2{
+                font-size: 1em;
+            }
+            h4{
+                font-size: 0.8em;
+            }
+            ul{
+                font-size: 0.6em;
+            }
+
+        }
+        .consultingDiv{
+            width: 35%;
+            top: 90%;
+            left: 20%;
+            button {
+                width: 100%;
+                font-size: 0.6em;
+
+            }
+            p{
+                font-size: 0.6em;
+
+            }
+
+        }
+    }
+
+
+}
